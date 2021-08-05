@@ -20,7 +20,7 @@ document.querySelector('.busca').addEventListener('submit', async (event)=>{
                 temIcon: json.weather[0].icon,
                 windSpeed: json.wind.speed,
                 windAngle: json.wind.deg
-            })
+            });
         }else{
             clearInfo();
             showWarning('Não encontramos esta localização');
